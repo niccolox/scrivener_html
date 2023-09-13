@@ -16,5 +16,5 @@
   "plug_crypto": {:hex, :plug_crypto, "1.0.0", "18e49317d3fa343f24620ed22795ec29d4a5e602d52d1513ccea0b07d8ea7d4d", [:mix], [], "hexpm", "73c1682f0e414cfb5d9b95c8e8cd6ffcfdae699e3b05e1db744e58b7be857759"},
   "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], [], "hexpm"},
   "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], []},
-  "scrivener": {:hex, :scrivener, "2.2.1", "5a84cdfc042e3c318a03f965d8197b8294676a8fff7c4a29e482a90c467ebf19", [:mix], [], "hexpm", "a9cc85e580925b13cdb5265cead4594ddb3cc7fb23eea8843c219827165f6c4f"},
+  "scrivener": {:hex, :scrivener, "2.7.2", "1d913c965ec352650a7f864ad7fd8d80462f76a32f33d57d1e48bc5e9d40aba2", [:mix], [], "hexpm", "7866a0ec4d40274efbee1db8bead13a995ea4926ecd8203345af8f90d2b620d9"},
 }
