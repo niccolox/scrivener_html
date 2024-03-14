@@ -8,8 +8,8 @@ defmodule ScrivenerHtml.Mixfile do
       version: @version,
       elixir: "~> 1.10",
       name: "scrivener_html",
-      source_url: "https://github.com/mgwidmann/scrivener_html",
-      homepage_url: "https://github.com/mgwidmann/scrivener_html",
+      source_url: "https://github.com/carsdotcom/scrivener_html",
+      homepage_url: "https://github.com/carsdotcom/scrivener_html",
       elixirc_paths: elixirc_paths(Mix.env()),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
@@ -29,7 +29,6 @@ defmodule ScrivenerHtml.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [
-      applications: [:logger],
       extra_applications: [:phoenix, :phoenix_html]
     ]
   end
@@ -48,22 +47,32 @@ defmodule ScrivenerHtml.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:scrivener, "~> 1.2 or ~> 2.0"},
+      # {:scrivener, "~> 1.2 or ~> 2.0"},
+      # {:scrivener, path: "/Users/christiankoch/projects/scrivener", override: true},
+      {:scrivener, github: "carsdotcom/scrivener"},
       {:phoenix_html, "~> 2.2 or ~> 3.0"},
-      {:phoenix, "~> 1.0 and < 1.7.0", optional: true},
+      {:phoenix, "~> 1.6.0", optional: true},
       {:plug, "~> 1.1"},
       {:ex_doc, "~> 0.19", only: :dev},
-      {:earmark, "~> 1.1", only: :dev}
+      {:earmark, "~> 1.1", only: :dev},
+      {:dialyxir, "~> 1.1", only: [:dev], runtime: false}
     ]
   end
 
   defp package do
     [
-      maintainers: ["Matt Widmann"],
+      maintainers: ["Matt Widmann (DOA)", "Cars Commerce Engineers"],
       licenses: ["MIT"],
-      links: %{github: "https://github.com/mgwidmann/scrivener_html"}
+      links: %{github: "https://github.com/carsdotcom/scrivener_html"},
+      files: [
+        "lib/scrivener",
+        "mix.exs",
+        "README.md"
+      ]
     ]
   end
+
+
 
   defp aliases do
     [publish: ["hex.publish", "hex.publish docs", "tag"], tag: &tag_release/1]
