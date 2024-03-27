@@ -48,7 +48,7 @@ defmodule ScrivenerHtml.Mixfile do
   defp deps do
     [
       {:scrivener, github: "carsdotcom/scrivener", ref: "9c8d3226"},
-      {:phoenix_html, "~> 2.2 or ~> 3.0"},
+      {:phoenix_html, "~> 4.0"},
       {:phoenix, "~> 1.6.0", optional: true},
       {:plug, "~> 1.1"},
       {:ex_doc, "~> 0.19", only: :dev},
